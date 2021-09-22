@@ -16,9 +16,13 @@
   "bugs": {
     "url": "https://github.com/Kanema2021/fitness-tracker/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/Kanema2021/fitness-tracker#readme",
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^6.0.7"
   }
+=======
+  "homepage": "https://github.com/Kanema2021/fitness-tracker#readme"
+>>>>>>> 8fab5173856e85836b3dc28e4774e03c27da713d
 }
