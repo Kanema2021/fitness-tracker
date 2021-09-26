@@ -6,7 +6,7 @@ router.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"))
 })
 
-router.get("/workout", (req, res) => {
+router.get("/exercise", (req, res) => {
     console.log("let's work out!")
     res.sendFile(path.join(__dirname, "../public/exercise.html"))
 })
@@ -16,4 +16,4 @@ router.get("/stats", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/stats.html"))
 })
 
-module.exports = router
+module.exports = router;

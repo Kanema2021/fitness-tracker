@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const db = require("../models/workout")
+const mongoose = require('mongoose')
 
 router.get("/api/workouts", (req, res) => {
     db.Workout.find(
@@ -11,7 +12,7 @@ router.get("/api/workouts", (req, res) => {
 })
 
 router.put("/api/workouts", (req, res) => {
-    db.Workout.findByIdAndUpdate(
+    db.Workout.finOneAndUpdate(
         req.params.id,
         {
             $push: { exercises: req.body }
