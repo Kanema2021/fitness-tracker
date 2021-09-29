@@ -15,8 +15,11 @@ app.use(express.static(path.join(__dirname, "public")));
 mongoose.
 connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker", 
 {
-  useNewUrlParser: true,
-  useFindAndModify: false
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    // useCreateIndex: true,
+    // useFindAndModify: false
+
 }
 ).then(console.log("mongodb connected"))
 .catch((err) => {
@@ -25,7 +28,8 @@ connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker",
 })
 
 // routes
-
+// app.use(require("./routes/api.js"))
+// app.use(require("./routes/views.js"))
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
