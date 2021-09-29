@@ -1,17 +1,13 @@
 const router = require("express").Router();
 const db = require("../models/workout.js")
-// const mongoose = require('mongoose')
 
 router.post("/api/workouts", (req, res) => {
     db.Workout.create({}).then(newWorkout => {
         res.json(newWorkout)
-    })
-    // .catch(err => {
-    //     res.json(err)
-    // })
+    })   
 })
 
-router.put("/api/workouts", (req, res) => {
+router.put("/api/workouts/:id", (req, res) => {
     db.Workout.findOneAndUpdate(
         req.params.id,
         {
@@ -19,9 +15,18 @@ router.put("/api/workouts", (req, res) => {
         }).then(workouts => {
             res.json(workouts)
         })
-        // .catch(err => res.json(err))
 })
 
+router.get("api/workouts/range", (req, res) => {
+    db.Workout.find(
+        {}, (err, workouts)
+    .then((newWorkout) => {
+        res.json(newWorkout)
+    })
+})
+
+
+router.delete()
 
 router.get("/api/workouts", (req, res) => {
     db.Workout.find(
@@ -29,7 +34,6 @@ router.get("/api/workouts", (req, res) => {
         .then(workouts =>
             res.json(workouts)
         )
-        // .catch(err => res.json(err));
 })
 
 module.exports = router

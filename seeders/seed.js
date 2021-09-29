@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const db = require('../models');
 
-mongoose.connect('mongodb://localhost/workout', {
+mongoose.connect('mongodb+srv://kmarting:Jessiegw11!@cluster0.ukjyu.mongodb.net/Fitness_Tracker?retryWrites=true&w=majority', {
   useNewUrlParser: true,
-  useFindAndModify: false,
+  // useFindAndModify: false,
   useUnifiedTopology: true,
 });
 
@@ -128,7 +128,7 @@ const workoutSeed = [
 db.Workout.deleteMany({})
   .then(() => db.Workout.collection.insertMany(workoutSeed))
   .then((data) => {
-    console.log(data.result.n + ' records inserted!');
+    console.log(data + ' records inserted!');
     process.exit(0);
   })
   .catch((err) => {
