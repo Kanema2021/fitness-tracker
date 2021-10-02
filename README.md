@@ -26,4 +26,15 @@ https://kmarting-fitness-tracker.herokuapp.com/
 https://kanema2021.github.io/fitness-tracker/
 https://github.com/Kanema2021/fitness-tracker
 
+## Technologies Used
 
+```md
+1. Javascript
+2. Node.js
+3. MongoDB
+4. Mongoose
+5. Heroku
+```
+
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./Licenses/mit)
