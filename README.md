@@ -21,6 +21,9 @@ The user will be able to:
 
   * View the total duration of each workout from the past seven workouts on the `stats` page.
 
-https://github.com/Kanema2021/fitness-tracker
+
 https://kmarting-fitness-tracker.herokuapp.com/
+https://kanema2021.github.io/fitness-tracker/
+https://github.com/Kanema2021/fitness-tracker
+
 
