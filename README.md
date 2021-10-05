@@ -23,7 +23,6 @@ The user will be able to:
 
 
 https://kmarting-fitness-tracker.herokuapp.com/
-https://kanema2021.github.io/fitness-tracker/
 https://github.com/Kanema2021/fitness-tracker
 
 ## Technologies Used
